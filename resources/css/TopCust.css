@@ -1,0 +1,67 @@
+.top-cust-section {
+  background-color: #111; /* konten tetap gelap */
+  padding: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tc-title {
+  display: block;
+  width: 100%;              /* isi full lebar */
+  background-color: #f9a825; /* kuning-oranye sesuai tema */
+  color: black;              /* teks hitam */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 0;           /* biar kotak terasa penuh */
+  border-radius: 6px;        /* opsional, sudut sedikit melengkung */
+  margin-bottom: 15px;
+}
+
+.cust-ticker {
+  overflow: hidden;
+}
+
+.cust-ticker-content {
+  display: flex;
+  gap: 30px;
+  animation: scrollTicker 20s linear infinite;
+}
+
+.tc-item {
+  white-space: nowrap;
+  font-size: 16px;
+  color: white; /* tetap putih untuk nama customer */
+}
+
+.tc-item span {
+  font-weight: bold;
+  margin-right: 8px;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.vip {
+  background-color: gold;
+  color: black;
+}
+
+.regular {
+  background-color: #007bff;
+  color: white;
+}
+
+.promo {
+  background-color: crimson;
+  color: white;
+}
+
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,22 +1,48 @@
-import React from "react";
+import '@/../css/header.css';
+import React, { useState } from "react";
 
 const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <a className="navbar-brand" href="#">MyApp</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span className="navbar-toggler-icon"></span>
+    <header className="header-section bg-dark text-white py-3">
+      <div className="container d-flex align-items-center justify-content-between">
+        {/* Logo */}
+        <a className="site-logo" href="/">
+          <img src="/template/game-warrior-gh-pages/img/logo.png" alt="Logo" className="logo-img" />
+        </a>
+
+        {/* Hamburger button (mobile only) */}
+        <button
+          className="nav-switch btn btn-link text-orange d-md-none"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
+          <i className="fa fa-bars fa-lg"></i>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><a className="nav-link" href="#">Home</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Features</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+
+        {/* Site menu */}
+        <nav className={`main-menu ${isOpen ? "open" : ""}`}>
+          <ul className="nav-list flex-column gap-2 mb-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="review.html">Games</a></li>
+            <li><a href="categories.html">Blog</a></li>
+            <li><a href="community.html">Forums</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
+        </nav>
+
+        {/* User panel */}
+        <div className="d-flex flex-column flex-md-row align-items-start gap-2">
+            <a href="#" className="btn btn-sm btn-warning fw-bold w-100 w-md-auto">Login</a>
+            <a href="#" className="btn btn-sm btn-outline-warning fw-bold w-100 w-md-auto">Register</a>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

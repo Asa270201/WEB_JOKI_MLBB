@@ -1,0 +1,55 @@
+/* Orange theme */
+.text-orange {
+  color: orange;
+}
+
+.header-section {
+  background-color: #1c1c1c;
+}
+
+.logo-img {
+  max-height: 40px;
+}
+
+/* Nav styling */
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-list li a {
+  color: orange;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #ffae42;
+}
+
+/* Mobile menu toggle */
+.main-menu {
+  display: none;
+}
+
+.main-menu.open {
+  display: block;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .main-menu {
+    display: block !important;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav-switch {
+    display: none !important;
+  }
+}
+
