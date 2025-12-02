@@ -29,3 +29,42 @@
   display: inline-block;
   margin-top: 20px;
 }
+
+/* Panah navigasi */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #f9a825; /* kuning-oranye sesuai tema */
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  color: black;
+}
+
+/* Dot navigasi */
+.swiper-pagination-bullet {
+  background-color: #f9a825; /* dot default kuning-oranye */
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: orange; /* dot aktif oranye */
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .hs-text h2 {
+    font-size: 32px;
+  }
+
+  .hs-text .container p {
+    font-size: 14px;
+  }
+}

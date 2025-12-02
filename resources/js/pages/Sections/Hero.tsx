@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "../../../css/hero.css";
+import "../../../css/Hero.css";
 
 const Hero: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
               backgroundImage: "url('/template/game-warrior-gh-pages/img/slider-1.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              minHeight: "500px",
+              minHeight: "800px",
               display: "flex",
               alignItems: "center",
             }}
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
               backgroundImage: "url('/template/game-warrior-gh-pages/img/slider-2.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              minHeight: "500px",
+              minHeight: "800px",
               display: "flex",
               alignItems: "center",
             }}
