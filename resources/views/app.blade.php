@@ -39,11 +39,20 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
+        {{-- Vite + React --}}
         @viteReactRefresh
         @vite(['resources/js/app.tsx', "resources/js/pages/{$page['component']}.tsx"])
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
+
+        {{-- Template JS dari public/template/game-warrior-gh-pages/js --}}
+        <script src="/template/game-warrior-gh-pages/js/jquery-3.2.1.min.js"></script>
+        <script src="/template/game-warrior-gh-pages/js/bootstrap.min.js"></script>
+        <script src="/template/game-warrior-gh-pages/js/owl.carousel.min.js"></script>
+        <script src="/template/game-warrior-gh-pages/js/jquery.marquee.min.js"></script>
+        <script src="/template/game-warrior-gh-pages/js/map.js"></script>
+        <script src="/template/game-warrior-gh-pages/js/main.js"></script>
     </body>
 </html>
