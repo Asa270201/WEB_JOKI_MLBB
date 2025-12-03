@@ -1,0 +1,251 @@
+.product-card-gaming {
+  background: linear-gradient(180deg, #1c1c1c 0%, #0d0d0d 100%);
+  border: 2px solid #ffb300;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(255, 179, 0, 0.4);
+  font-family: "Orbitron", sans-serif; /* font techno gaming */
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+.badge-new {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ffb300;
+  color: #000;
+  font-weight: 900;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  box-shadow: 0 0 10px #ffb300;
+}
+
+.product-body {
+  padding: 20px;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-category {
+  font-size: 14px;
+  color: #ffb300;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.product-price {
+  margin-bottom: 16px;
+}
+
+.product-price del {
+  color: #888;
+  margin-right: 8px;
+}
+
+.product-price span {
+  color: #ffb300;
+  font-weight: 900;
+  font-size: 20px;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.8);
+}
+
+.btn-cart-gaming {
+  background: linear-gradient(90deg, #ffb300, #ff6600);
+  border: none;
+  color: #000;
+  font-weight: 900;
+  padding: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.7);
+}
+
+.btn-cart-gaming:hover {
+  background: linear-gradient(90deg, #ffa000, #ff4500);
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stars i {
+  margin-right: 2px;
+  color: #ffb300;
+  text-shadow: 0 0 6px rgba(255, 179, 0, 0.8);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-circle-gaming {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #ffb300;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffb300;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 179, 0, 0.6);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.icon-circle-gaming:hover {
+  background: #ffb300;
+  color: #000;
+}
+
+/* Efek hover untuk card gaming */
+.product-card-gaming:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gambar zoom saat hover */
+.product-card-gaming:hover .product-image img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Badge NEW glow lebih kuat saat hover */
+.product-card-gaming:hover .badge-new {
+  background: #ffa000;
+  box-shadow: 0 0 15px #ffa000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tombol Add to Cart glow saat hover */
+.product-card-gaming:hover .btn-cart-gaming {
+  background: linear-gradient(90deg, #ffa000, #ff4500);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ikon aksi glow saat hover */
+.product-card-gaming:hover .icon-circle-gaming {
+  background: #ffb300;
+  color: #000;
+  box-shadow: 0 0 15px #ffa000;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Perkecil ukuran card gaming */
+.product-card-gaming {
+  max-width: 280px;       /* batasi lebar card */
+  margin: 0 auto;         /* biar rata tengah di kolom */
+}
+
+.product-image img {
+  max-height: 180px;      /* batasi tinggi gambar */
+  object-fit: cover;      /* gambar tetap proporsional */
+}
+
+.product-body {
+  padding: 14px;          /* kurangi padding */
+}
+
+.product-title {
+  font-size: 16px;        /* perkecil judul */
+  margin-bottom: 8px;
+}
+
+.product-category {
+  font-size: 12px;        /* kategori lebih kecil */
+}
+
+.product-price span {
+  font-size: 16px;        /* harga baru lebih kecil */
+}
+
+.btn-cart-gaming {
+  padding: 8px;           /* tombol lebih ramping */
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.product-footer {
+  font-size: 12px;        /* rating & ikon lebih kecil */
+}
+
+.icon-circle-gaming {
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+}
+
+/* ===== Pagination Gaming Style ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.pagination button {
+  background: #ff6600;              
+  color: #ffb300;                      
+  font-weight: 900;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.7);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #ffb300;              
+  box-shadow: 0 0 20px rgba(255, 179, 0, 1);
+}
+
+.pagination button:disabled {
+  background: #ffb300;                 
+  color: #ff6600;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.pagination span {
+  color: #ffb300;                  
+  font-weight: 700;
+  font-size: 14px;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.8);
+}
+
+
+
+
