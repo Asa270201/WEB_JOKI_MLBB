@@ -1,0 +1,108 @@
+/* Card container */
+.recent-game-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #1c1c1c; /* charcoal gelap */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.recent-game-item:hover {
+  transform: translateY(-4px);
+}
+
+/* Thumbnail */
+.rgi-thumb {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 0; /* pastikan tidak ada jarak ekstra */
+}
+
+/* Konten */
+.rgi-content {
+  padding: 16px 20px 20px 20px; /* atas lebih kecil dari bawah */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Judul */
+.rgi-content h5 {
+  color: #fff;
+  font-size: 10px; /* lebih besar */
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+/* Deskripsi */
+.rgi-content p {
+  font-size: 18px; /* lebih besar */
+  color: black;
+  margin: 0 0 8px 0;
+  line-height: 1.5;
+}
+
+/* Komentar */
+.comment {
+  color: #ffb300; /* oranye terang */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Ikon tambahan */
+.rgi-extra {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.rgi-star img,
+.rgi-heart img {
+  width: 22px;
+}
+
+/* Label kategori */
+.cata {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.cata.Buff {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cata.Nerf {
+  background-color: crimson;
+  color: white;
+}
+
+.cata.Penyesuaian {
+  background-color: #ff9800;
+  color: black;
+}
+
+/* Section title */
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #f9a825; /* kuning-oranye sesuai tema */
+  text-align: center;
+}
