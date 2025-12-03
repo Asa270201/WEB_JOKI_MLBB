@@ -54,5 +54,6 @@
         <script src="/template/game-warrior-gh-pages/js/jquery.marquee.min.js"></script>
         <script src="/template/game-warrior-gh-pages/js/map.js"></script>
         <script src="/template/game-warrior-gh-pages/js/main.js"></script>
+        <script src="/template/Electro-Bootstrap-1.0.0/js/mainShop.js"></script>
     </body>
 </html>

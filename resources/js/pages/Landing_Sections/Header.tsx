@@ -28,8 +28,8 @@ const Header: React.FC = () => {
         {/* Site menu */}
         <nav className={`main-menu ${isOpen ? "open" : ""}`}>
           <ul className="nav-list flex-column gap-2 mb-0">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="review.html">Games</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop ">Shop</a></li>
             <li><a href="categories.html">Blog</a></li>
             <li><a href="community.html">Forums</a></li>
             <li><a href="contact.html">Contact</a></li>

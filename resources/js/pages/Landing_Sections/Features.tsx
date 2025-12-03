@@ -56,15 +56,11 @@ const Features: React.FC = () => {
   return (
     <section
       className="recent-game-section spad"
-      style={{
-        backgroundColor: "#f9f9f9",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      style={{ backgroundColor: "transparent" }}
     >
       <div className="container">
         <div className="section-title">
-          <h2 style={{ color: "black" }}>Recent Hero</h2>
+          <h2 style={{ color: "white" }}>Recent Hero</h2>
         </div>
         <div className="row">
           {recentGames.map((game, index) => (

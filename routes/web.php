@@ -8,6 +8,10 @@ Route::get('/', function () {
     return Inertia::render('LandingPage');
 });
 
+Route::get('/shop', function () {
+    return Inertia::render('ShopPage');
+});
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
