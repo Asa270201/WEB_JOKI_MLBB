@@ -19,6 +19,9 @@ Route::get('/single', function () {
 Route::get('/cart', function () {
     return Inertia::render('CartPage');
 });
+Route::get('/checkout', function () {
+    return Inertia::render('CheckOutPage');
+});
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
