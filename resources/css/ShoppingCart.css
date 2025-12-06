@@ -1,0 +1,186 @@
+/* General Styling for Shopping Cart */
+.cart-page-wrapper {
+  font-family: "Orbitron", sans-serif;
+  color: #e0e0e0; /* Slightly softer white for text */
+  background-image: url(../../public/template/5262770.jpg) ; /* Dark background */
+}
+
+/* Table Styling */
+.cart-table {
+  background-color: #1c1c1c;
+  border: 1px solid rgba(255, 179, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 179, 0, 0.1);
+}
+
+.cart-table thead th {
+  color: #ffb300;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffb300 !important;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.7);
+  font-size: 1rem;
+}
+
+.cart-table tbody tr {
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s ease;
+}
+
+.cart-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.cart-table tbody tr:hover {
+  background-color: #252525;
+}
+
+.cart-table th, .cart-table td {
+  vertical-align: middle;
+  border-top: none; /* Remove default bootstrap border */
+}
+
+.cart-table .product-name {
+  font-weight: 700;
+  color: #fff;
+}
+
+.cart-table .product-price {
+  color: #ff6600;
+  font-weight: 700;
+}
+
+.cart-items-box {
+  background-color: #1c1c1c;
+  border: 1px solid rgba(255, 179, 0, 0.2);
+  box-shadow: 0 0 15px rgba(255, 179, 0, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.cart-item-row {
+  background-color: #121212;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 179, 0, 0.05);
+}
+
+.cart-item-row:hover {
+  background-color: #1a1a1a;
+}
+
+.cart-item-row .product-name {
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(255, 179, 0, 0.4);
+}
+
+.cart-item-row .product-price {
+  color: #ff6600;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+
+/* Quantity Input Controls */
+.cart-quantity .btn {
+  background: #2a2a2a;
+  border: 1px solid #ffb300;
+  color: #ffb300;
+  transition: background 0.3s ease, color 0.3s ease;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-quantity .btn:hover {
+  background: #ffb300;
+  color: #000;
+}
+
+.cart-quantity .form-control {
+  background: transparent !important;
+  color: #ffb300 !important;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 1);
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove Item Button */
+.btn-remove-item {
+  border: 1px solid #ff4d4d !important;
+  background-color: rgba(255, 77, 77, 0.1) !important;
+  transition: all 0.3s ease;
+}
+.btn-remove-item .fa-times {
+  color: #ff4d4d !important;
+  text-shadow: 0 0 8px rgba(255, 77, 77, 0.8);
+  transition: all 0.3s ease;
+}
+.btn-remove-item:hover {
+  background-color: #ff4d4d !important;
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.7);
+}
+.btn-remove-item:hover .fa-times {
+  color: #fff !important;
+  text-shadow: none;
+}
+
+/* Coupon & Cart Total Section */
+.coupon-input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #555 !important;
+  color: #fff;
+  border-radius: 0;
+  transition: border-color 0.3s ease;
+}
+.coupon-input::placeholder {
+  color: #888;
+}
+.coupon-input:focus {
+  background: transparent;
+  color: #fff;
+  box-shadow: none;
+  border-bottom-color: #ffb300 !important;
+}
+
+.cart-total-box {
+  background: #1c1c1c;
+  border: 1px solid rgba(255, 179, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 179, 0, 0.2);
+}
+
+.cart-total-box h1, .cart-total-box h5 {
+  color: #ffb300;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.7);
+}
+
+/* Gaming Style Buttons */
+.btn-gaming-style {
+  background: linear-gradient(90deg, #ffb300, #ff6600);
+  border: none;
+  color: #000;
+  font-weight: 900;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.btn-gaming-style:hover {
+  background: linear-gradient(90deg, #ffa000, #ff4500);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 1);
+  transform: translateY(-2px);
+}
+
+.product-model {
+  color: #ff6600;             
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 1); 
+  font-family: "Orbitron", sans-serif;
+}
+

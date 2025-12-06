@@ -16,6 +16,10 @@ Route::get('/single', function () {
     return Inertia::render('SinglePage');
 });
 
+Route::get('/cart', function () {
+    return Inertia::render('CartPage');
+});
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
