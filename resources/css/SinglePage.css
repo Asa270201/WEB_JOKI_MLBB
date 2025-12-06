@@ -1,0 +1,69 @@
+.singlepage-wrapper {
+  display: flex;
+  flex-direction: row; /* selalu horizontal */
+  gap: 30px;
+  padding: 20px;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  background-image: url('/template/5262770.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Sidebar */
+.singlepage-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* Konten */
+.singlepage-content {
+  flex: 1;
+  margin-top: 20px;
+}
+
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .singlepage-wrapper {
+    gap: 20px;
+    padding: 15px;
+  }
+  .singlepage-sidebar {
+    width: 220px;
+  }
+}
+
+/* Mobile: tetap row, tapi bisa digeser */
+@media (max-width: 768px) {
+  .singlepage-wrapper {
+    flex-direction: row;   /* tetap horizontal */
+    overflow-x: auto;      /* biar bisa digeser */
+    gap: 15px;
+    padding: 12px;
+  }
+  .singlepage-sidebar {
+    min-width: 220px;      /* sidebar tetap utuh */
+  }
+  .singlepage-content {
+    min-width: 300px;      /* konten tetap utuh */
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .singlepage-wrapper {
+    gap: 10px;
+    padding: 10px;
+  }
+  .singlepage-sidebar {
+    min-width: 200px;
+  }
+  .singlepage-content {
+    min-width: 280px;
+  }
+}

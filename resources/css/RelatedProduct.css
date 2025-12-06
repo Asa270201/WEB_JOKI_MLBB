@@ -1,0 +1,130 @@
+/* Judul Section */
+.related-title {
+  color: #ffb300;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 10px rgba(255, 179, 0, 0.9);
+  border-bottom: 2px solid #ff6600;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Subjudul Explore */
+.explore {
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.8);
+}
+
+/* Wrapper scroll horizontal */
+.related-scroll-wrapper {
+  overflow: hidden; /* hilangin scrollbar */
+  width: 100%;
+}
+
+/* Row produk: horizontal, tidak wrap */
+.related-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Card produk */
+.related-item {
+  background: #1c1c1c;
+  border: 2px solid #ffb300;
+  border-radius: 12px;
+  width: 240px;          /* lebar card */
+  flex: 0 0 240px;       /* biar card tidak mengecil */
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.related-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 1);
+}
+
+/* Kategori & Nama Produk */
+.related-category {
+  color: #aaa;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.related-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+.related-price {
+  color: #ffb300;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 1);
+}
+
+/* Tombol Add to Cart */
+.btn-cart-gaming {
+  background: linear-gradient(90deg, #ffb300, #ff6600);
+  border: none;
+  color: #000;
+  font-weight: 900;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.7);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap; /* cegah teks pecah */
+  font-size: 14px;
+  display: inline-block;
+}
+.btn-cart-gaming:hover {
+  background: linear-gradient(90deg, #ffa000, #ff4500);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 1);
+}
+
+/* Rating bintang */
+.stars i {
+  color: #ffb300;
+  text-shadow: 0 0 6px rgba(255, 179, 0, 0.8);
+}
+
+/* Icon lingkaran (wishlist, compare) */
+.icon-circle {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ffb300;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffb300;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.icon-circle:hover {
+  background: #ffb300;
+  color: #000;
+}
+
+/* Tombol panah navigasi */
+.scroll-controls {
+  text-align: center;
+}
+.scroll-btn {
+  background: linear-gradient(90deg, #ffb300, #ff6600);
+  border: none;
+  color: #000;
+  font-weight: 900;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.7);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.scroll-btn:hover {
+  background: linear-gradient(90deg, #ffa000, #ff4500);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 1);
+}
+

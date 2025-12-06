@@ -1,0 +1,68 @@
+.shop-wrapper {
+  display: flex;
+  flex-direction: row; /* selalu horizontal */
+  gap: 30px;
+  padding: 20px;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  background-image: url('/template/5262770.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Sidebar */
+.shop-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* Konten utama */
+.shop-content {
+  flex: 1;
+}
+
+/* ========================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .shop-wrapper {
+    gap: 20px;
+    padding: 15px;
+  }
+  .shop-sidebar {
+    width: 220px;
+  }
+}
+
+/* Mobile: tetap row, tapi bisa digeser */
+@media (max-width: 768px) {
+  .shop-wrapper {
+    flex-direction: row;   /* tetap horizontal */
+    overflow-x: auto;      /* biar bisa digeser */
+    gap: 15px;
+    padding: 12px;
+  }
+  .shop-sidebar {
+    min-width: 220px;      /* sidebar tetap utuh */
+  }
+  .shop-content {
+    min-width: 300px;      /* konten tetap utuh */
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .shop-wrapper {
+    gap: 10px;
+    padding: 10px;
+  }
+  .shop-sidebar {
+    min-width: 200px;
+  }
+  .shop-content {
+    min-width: 280px;
+  }
+}

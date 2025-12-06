@@ -1,30 +1,28 @@
 import React from "react"; 
 import Header from "@/pages/Landing_Sections/Header";
 import Sidebar from "@/pages/Shop_Sections/Sidebar";
-import Sortby from "@/pages/Shop_Sections/Sortby";
-import Product from "@/pages/Shop_Sections/Product";
+import SingleProduct from "@/pages/Single_Section/SingleProduct";
+import RelatedProduct from "@/pages/Single_Section/RelatedProduct";
 import FooterTop from "@/pages/Landing_Sections/FooterTop";
 import Footer from "@/pages/Landing_Sections/Footer";
-import "../../css/ShopPage.css";
+import "../../css/SinglePage.css";
 
-const ShopPage: React.FC = () => {
+const SinglePage: React.FC = () => {
   return (
     <>
       <Header />
 
       {/* WRAPPER LAYOUT */}
-      <div className="shop-wrapper">
+      <div className="singlepage-wrapper">
         {/* SIDEBAR */}
-        <div className="shop-sidebar">
+        <div className="singlepage-sidebar">
           <Sidebar />
         </div>
 
-        {/* AREA KANAN */}
-        <div className="shop-content">
-          <Sortby />
-          <div style={{ marginTop: "20px" }}>
-            <Product />
-          </div>
+        {/* Produk grid */}
+        <div className="singlepage-content">
+          <SingleProduct />
+          <RelatedProduct />
         </div>
       </div>
 
@@ -34,4 +32,4 @@ const ShopPage: React.FC = () => {
   );
 };
 
-export default ShopPage;
+export default SinglePage;
