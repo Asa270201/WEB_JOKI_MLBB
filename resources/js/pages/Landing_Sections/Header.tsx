@@ -30,7 +30,7 @@ const Header: React.FC = () => {
           <ul className="nav-list flex-column gap-2 mb-0">
             <li><a href="/">Home</a></li>
             <li><a href="/shop ">Shop</a></li>
-            <li><a href="categories.html">Blog</a></li>
+            <li><a href="/momment">Momment</a></li>
             <li><a href="community.html">Forums</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
