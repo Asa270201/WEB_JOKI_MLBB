@@ -16,9 +16,7 @@ Website ini dibuat untuk menyediakan layanan joki Mobile Legends: Bang Bang (MLB
 
 ## ✨ Fitur Utama
 - ✅ Informasi layanan joki MLBB (rank, hero, mode, dll.)
-- ✅ Formulir pemesanan online
 - ✅ Tampilan responsif (mobile & desktop friendly)
-- ✅ Tempat khusus untuk menampilkan video promosi/testimoni
 
 ---
 
