@@ -8,7 +8,7 @@ Website ini dibuat untuk menyediakan layanan joki Mobile Legends: Bang Bang (MLB
 
 <p align="center">
   <a href="https://youtu.be/7hhyIyArPIs" target="_blank">
-    <img src="https://img.youtube.com/vi/e9jf22Ebjss/0.jpg" alt="Demo Video" width="600">
+    <img src="https://youtu.be/7hhyIyArPIs/1" alt="Demo Video" width="600">
   </a>
 </p>
 
