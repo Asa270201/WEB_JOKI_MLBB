@@ -1,0 +1,31 @@
+# WEB JOKI MLBB 🎮
+
+Selamat datang di repository **WEB JOKI MLBB**!  
+Website ini dibuat untuk menyediakan layanan joki Mobile Legends: Bang Bang (MLBB) dengan tampilan yang sederhana, informatif, dan mudah digunakan.
+
+---
+# 🎥 Demo Video
+
+<p align="center">
+  <a href="https://youtu.be/7hhyIyArPIs" target="_blank">
+    <img src="https://i9.ytimg.com/vi_webp/7hhyIyArPIs/mq1.webp?sqp=CPiJ3skG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEogWShlMA8=&rs=AOn4CLD-vuYdBs_H1Kz7NonHvKR41TAIqg" alt="Demo Video" width="600">
+  </a>
+</p>
+
+---
+
+## ✨ Fitur Utama
+- ✅ Informasi layanan joki MLBB (rank, hero, mode, dll.)
+- ✅ Tampilan responsif (mobile & desktop friendly)
+
+---
+
+## 📂 Struktur Proyek
+- `index.html` → Halaman utama website
+- `style.css` → File CSS untuk desain tampilan
+- `script.js` → File JavaScript untuk interaktivitas
+- `README.md` → Dokumentasi proyek
+
+--- 
+
+**MASIH ON PROGRESSS YA GESSS**
