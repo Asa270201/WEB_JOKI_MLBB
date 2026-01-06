@@ -31,7 +31,6 @@ const Header: React.FC = () => {
             <li><a href="/">Home</a></li>
             <li><a href="/shop ">Shop</a></li>
             <li><a href="/momment">Momment</a></li>
-            <li><a href="community.html">Forums</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>

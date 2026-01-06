@@ -1,0 +1,61 @@
+/* General Section Styling */
+.page-info-section {
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 60px 20px;
+}
+
+/* Overlay gelap agar teks lebih jelas */
+.page-info-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.pi-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Headings */
+.page-info-section h2 {
+  color: #ffb300;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(255, 179, 0, 0.9);
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.page-info-section p {
+  color: #cccccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  max-width: 500px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-info-section {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .page-info-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .page-info-section p {
+    font-size: 1rem;
+  }
+}

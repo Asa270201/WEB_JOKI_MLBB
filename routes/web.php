@@ -32,6 +32,10 @@ Route::get('/succes', function () {
     return Inertia::render('PaymentSuccesPage');
 });
 
+Route::get('/momment', function () {
+    return Inertia::render('MommentPage');
+});
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
