@@ -42,9 +42,20 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 });
 
+// route test bootstrap
 Route::get('/test-bootstrap', function () {
     return Inertia::render('TestBootstrap');
 });
+
+Route::get('/admin', function () {
+    return Inertia::render('Admin/Admin'); // halaman utama dashboard
+});
+
+Route::get('/admin/worker', function () {
+    return Inertia::render('Admin/Worker'); // halaman Worker.tsx
+});
+
+
 
 
 require __DIR__.'/settings.php';

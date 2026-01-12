@@ -1,0 +1,213 @@
+/* === Widget umum === */
+.gaming-widget {
+  background: #1c1c1c;
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.7);
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gaming-widget:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255, 102, 0, 1);
+}
+
+.widget-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #ffb300;
+  text-shadow: 0 0 10px rgba(255, 179, 0, 0.9);
+}
+
+/* === Customer Satisfaction (Pie Chart) === */
+.customer-satisfaction-wrapper {
+  max-width: 300px;
+  flex: 0 0 300px;
+}
+
+.recharts-pie-sector {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.recharts-pie-sector:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 12px rgba(255, 179, 0, 0.9));
+}
+
+/* === Visitors Chart === */
+.visitors-wrapper {
+  max-width: 250px;
+  flex: 0 0 250px;
+}
+
+.visitors-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.visitors-count {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff6600;
+  text-shadow: 0 0 15px rgba(255, 102, 0, 0.9);
+  display: block;
+}
+
+.visitors-label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* === Workers Online === */
+.workers-wrapper {
+  max-width: 250px;
+  flex: 0 0 250px;
+}
+
+.workers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 515px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ff6600 #1c1c1c;
+}
+
+.gaming-widget.workers-widget {
+  height: 515px; 
+}
+
+.workers-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.workers-list::-webkit-scrollbar-thumb {
+  background-color: #ff6600;
+  border-radius: 4px;
+}
+
+.worker-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.worker-item:hover {
+  color: #ffb300;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.online {
+  background-color: #00ff66;
+  box-shadow: 0 0 8px rgba(0, 255, 102, 0.9);
+}
+
+.status-dot.offline {
+  background-color: #ff3366;
+  box-shadow: 0 0 8px rgba(255, 51, 102, 0.9);
+}
+
+/* === Stats Card === */
+.stats-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #1c1c1c;
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  padding: 16px;
+  width: 200px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 1);
+}
+
+.stat-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* === Product Sold Breakdown === */
+.product-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.product-header {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  font-weight: bold;
+  color: #ffb300;
+  border-bottom: 1px solid #ff6600;
+  padding-bottom: 6px;
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  color: #fff;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+.product-row:hover {
+  color: #ffcc00;
+}
+
+/* === Responsif === */
+@media (max-width: 480px) {
+  .gaming-widget {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .customer-satisfaction-wrapper,
+  .visitors-wrapper,
+  .workers-wrapper,
+  .stats-row {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}

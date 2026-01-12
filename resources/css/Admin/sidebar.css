@@ -1,0 +1,91 @@
+/* === Sidebar Container === */
+.sidebar-dashboardkit {
+  width: 240px;
+  background: #1c1c1c;
+  color: #ffcc00;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 2px solid #ff6600;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+  font-family: "Orbitron", sans-serif;
+}
+
+/* === Logo === */
+.sidebar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffb300;
+  text-shadow: 0 0 10px rgba(255, 179, 0, 0.9);
+  margin-bottom: 30px;
+}
+
+/* === Menu List === */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: #ffcc00;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffcc00;
+  text-decoration: none; /* hilangkan underline */
+  width: 100%;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu li a:hover {
+  background: rgba(255, 179, 0, 0.1);
+  color: #ffa500;
+  text-shadow: 0 0 8px rgba(255, 179, 0, 0.8);
+}
+
+/* === Icon Style === */
+.menu-icon {
+  font-size: 16px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* === Footer === */
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+/* === Upgrade Button === */
+.btn-upgrade {
+  background: linear-gradient(90deg, #ffb300, #ff6600);
+  border: none;
+  color: #000;
+  font-weight: 900;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.7);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-upgrade:hover {
+  background: linear-gradient(90deg, #ffa000, #ff4500);
+  box-shadow: 0 0 20px rgba(255, 102, 0, 1);
+}
