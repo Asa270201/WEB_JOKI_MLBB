@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "@/pages/Admin/Component/Sidebar";
 import Navbar from "@/pages/Admin/Component/Navbar";
-import FooterTop from "@/pages/Landing_Sections/FooterTop";
 import Footer from "@/pages/Landing_Sections/Footer";
 import "../../../css/Admin/Worker.css";
 
@@ -14,6 +13,14 @@ interface Worker {
 }
 
 const workers: Worker[] = [
+  { name: "Alice", username: "alice01", rank: "Diamond", role: "Moderator", status: "online" },
+  { name: "Bob", username: "bob_dev", rank: "Platinum", role: "Developer", status: "online" },
+  { name: "Charlie", username: "charlieX", rank: "Gold", role: "Support", status: "offline" },
+  { name: "Diana", username: "dianaPro", rank: "Master", role: "Admin", status: "online" },
+  { name: "Alice", username: "alice01", rank: "Diamond", role: "Moderator", status: "online" },
+  { name: "Bob", username: "bob_dev", rank: "Platinum", role: "Developer", status: "online" },
+  { name: "Charlie", username: "charlieX", rank: "Gold", role: "Support", status: "offline" },
+  { name: "Diana", username: "dianaPro", rank: "Master", role: "Admin", status: "online" },
   { name: "Alice", username: "alice01", rank: "Diamond", role: "Moderator", status: "online" },
   { name: "Bob", username: "bob_dev", rank: "Platinum", role: "Developer", status: "online" },
   { name: "Charlie", username: "charlieX", rank: "Gold", role: "Support", status: "offline" },
@@ -38,8 +45,12 @@ const Worker: React.FC = () => {
 
   return (
     <div className="admin-container">
+      {/* Sidebar */}
       <Sidebar />
+
+      {/* Main Content */}
       <div className="main-content">
+        {/* Navbar */}
         <Navbar />
 
         {/* Worker Cards */}
@@ -79,6 +90,7 @@ const Worker: React.FC = () => {
           ))}
         </div>
 
+        {/* Footer */}
         <div className="footer-section">
           <Footer />
         </div>
@@ -86,6 +98,5 @@ const Worker: React.FC = () => {
     </div>
   );
 };
-
 
 export default Worker;

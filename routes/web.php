@@ -47,6 +47,7 @@ Route::get('/test-bootstrap', function () {
     return Inertia::render('TestBootstrap');
 });
 
+// Admin routes
 Route::get('/admin', function () {
     return Inertia::render('Admin/Admin'); // halaman utama dashboard
 });
@@ -55,7 +56,8 @@ Route::get('/admin/worker', function () {
     return Inertia::render('Admin/Worker'); // halaman Worker.tsx
 });
 
-
-
+Route::get('/admin/job', function () {
+    return Inertia::render('Admin/Job'); // halaman Job.tsx
+});
 
 require __DIR__.'/settings.php';
